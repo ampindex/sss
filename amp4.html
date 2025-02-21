@@ -1,0 +1,85 @@
+<div class="container">
+    <body bgcolor="Pink">
+        <h2><p align="center"><font color="Black">ตารางราคา</font></p></h2>
+    </body>
+    <style>
+        table {
+            width: 100%;
+            text-align: center;
+            background: white;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #ff0000;
+            color: white;
+            padding: 10px;
+        }
+        td {
+            padding: 10px;
+        }
+    </style>
+    <table>
+        <thead>
+            <tr>
+                <th>รุ่น</th>
+                <th>ราคา (บาท)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Honda Giorno+</td>
+                <td>56,500</td>
+            </tr>
+            <tr>
+                <td>Honda PCX150</td>
+                <td>89,500</td>
+            </tr>
+            <tr>
+                <td>Honda Forza350</td>
+                <td>179,000</td>
+            </tr>
+            <tr>
+                <td>Honda Wave125i</td>
+                <td>55,000</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="form-container">
+        <h2>แบบสอบถามความคิดเห็น</h2>
+        <form action="#" method="post">
+            <ol>
+                <li>
+                    <label for="name">ชื่อ:</label>
+                    <input type="text" id="name" name="name" required>
+                </li>
+                <li>
+                    <label for="email">อีเมล:</label>
+                    <input type="email" id="email" name="email" required>
+                </li>
+                <li>
+                    <label for="rating">ให้คะแนนความพึงพอใจ (1-5):</label>
+                    <select id="rating" name="rating" required>
+                        <option value="1">1 - น้อยที่สุด</option>
+                        <option value="2">2</option>
+                        <option value="3">3 - ปานกลาง</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - มากที่สุด</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="comments">ความคิดเห็นเพิ่มเติม:</label>
+                    <textarea id="comments" name="comments" rows="4" required></textarea>
+                </li>
+            </ol>
+            <button type="submit" class="submit-btn">ส่งความคิดเห็น</button>
+        </form>
+    </div>
+</div>
+</div>
+<table>
+</table>
+<a href="index.html" style="display: inline-block; margin: 20px 0; padding: 10px 20px; background-color: #814caf; color: white; text-decoration: none; border-radius: 5px;">Back to Home</a>
